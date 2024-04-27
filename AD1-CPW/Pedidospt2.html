@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RefrescaPePisoFrio</title>
+    <style>
+        .colPri {
+            float: left;
+            width: 90px;
+            display: block;
+        }
+        .divLinha {
+            width: 500px;
+            margin-bottom: 6px;
+        }
+        .fieldsetMaior {
+            float: left; 
+            width: 94%; 
+            border: 1px solid #000; 
+            text-align: left; 
+        }
+        .fiedm {
+            float: right;
+            display: inline;
+            margin: 0px 0px 0px 0px;
+        }
+        .container {
+            display: flex;
+        }
+        .ridhtcolum {
+            float: right;
+            display: inline;
+            margin: 0px 0px 0px 0px;    
+        }
+        .leftcolumn {
+            float: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .selecPerc100Cel {
+            width: 86%;
+        }
+        .cartao {
+            width: 270px;
+        }
+        .colLabCrd {
+            width: 270px;
+            float: left;
+            text-align: left;
+            height: 45px;
+        }
+        .FormBox {
+            width: 540px;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            color: #000000;
+            background-color: #EEDDCC;
+            border: 3px solid #000055;
+            font-size: 16px;
+            font-family: Karla, Verdana, Ubuntu;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .LinhaForm {
+            margin: 0;
+            height: 30px;
+            padding: 6px 3px 0px 3px;
+        }
+        .inpEnder {
+            width: 180px;
+            height: 60px;
+        }
+        .inpTelef {
+            width: 90px;
+        }
+        .inpNCC {
+            width: 130px;
+        }
+        #listaCompras {
+            width: 190px;
+            height: 200px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            float: right;
+        }
+        .InpBoxMed {
+            width: 80px;
+        }
+        .botoes {
+            text-align: right;
+            margin: 20px 10px 0px 10px;
+        }
+        ul {
+            line-height: 200%; 
+        }
+        a {
+            text-decoration: none; 
+        }
+        .texto-direita-topo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 140%;
+            text-align: right;
+            font: size 14px;
+            font-family: Karla;
+            width: 300px;
+            border: 1px solid #BBAA99;   
+            float: right;
+        }
+        .excecao1 {
+            text-align: center;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            font: size 16px;;
+            font-family: stoke
+        }
+        body {
+	        color: #7711CC;
+	        background-color: #BBAA99;
+       }
+        a:link {
+            color: #7711CC;
+        }
+        a:visited {
+            color: #8822DD; 
+        }
+        #dov{
+            height: 30vh;
+            margin-left: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            text-align: center; 
+            padding: 10px; 
+            position: fixed; 
+            width: 100%; 
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <h1><img src="RefrescaPeTopo.png" alt="RefrescaPeTopo" width="410" height="60">
+    </h1>
+</section>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <td style="border-bottom: 3px solid #402020; margin-bottom: 6px; padding-bottom: 15px; width: 400px;">
+            </td>
+        </tr>
+    </table>
+    <section>
+        <div class="texto-direita-topo"> 
+        Rua da Olaria,3ºpiso</br>
+        Tel: (21)98811-2244</br>
+       <a href="contato@refrescape.com.br">
+            contato@refrescape.com.br</a>
+        </div>
+    </section>
+    <section>
+        <nav font-family: Karla ; margin-top: 50px; color:  #332277; line-height: 230% margin-top: 40px; font-size: 16px;>
+        <ul type="square">
+            <div class="texto.direta-topo excecao2">
+                <li><a href="RefrecaPePisoFrio.html">Apresentação</a></li>
+                <li><a href="Porcelanatos.html">Porcelanatos</a></li>
+                <li><a href="Complementos.html">Complementos</a></li>
+                <li><a href="Pedidos.html">Pedidos</a></li>
+            </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+            <form class="FormBox" method="post">
+            <fieldset class="fieldsetMaior"><legend>Identificação</legend>
+                <div class="divLinha">
+               <p><label for="inome">Nome: </label><input type="text" required name="Nome" id="inome" class="selecPerc100Cel"></p>
+                </div>
+                
+                <div class="divLinha">
+                <p><label for="isobrenome">E-mail:</label><input type="email" required name="Sobrenome" id="isobrenome" class="selecPerc100Cel"></p>
+                </div>
+
+                <div class="divLinha">
+                <label for="Endereço" class="colPri">Endereço:</label>
+            <textarea id="Endereço" class="inpEnder"></textarea>
+        
+            <fieldset class="ridhtcolum"><legend>Gênero</legend>
+                <input type="radio" name="Mas" id="imas"><label for="imas">Mas</label>
+                <input type="radio" name="Fem" id="ifem"><label for="ifem">Fem</label>
+                <input type="radio" name="Outro" id="ioutro"><label for="ioutro">Outro</label>
+            </fieldset>
+                </div>
+                
+           <div class="divLinha">
+        <fieldset class="fiedm"><legend>Nascimento</legend>
+            <input type="number" min="1" max="31" style="width: 30px;">
+            <label> / </label>
+            <input type="number" min="1" max="12" style="width: 30px;">
+            <label> / </label>
+            <input type="number" min="1920" max="2005" style="width: 50px;">
+        </fieldset>
+         
+        <p><label class="colPri">Telefone:</label>
+            <input type="text" class="inpTelef"
+            name="TxtTelefone" required /></p>
+            <label class="colPri">Celular:</label>
+            <input type="text" class="inpTelef"
+            name="TxtCelular" />
+        </div>
+
+        </fieldset>
+        <fieldset class="fieldsetMaior"><legend>Pagamento</legend>
+        <div class="container">
+            <div class="leftcolumn">
+        <fieldset class="cartao"><legend>Cartão</legend>
+        <span class="colLabCrd">
+        <label for="">Bandeira:</label><input type="radio" name="Visa" id="ivisa"><label for="ivisa">Visa</label>
+        <input type="radio" name="Master" id="imaster"><label for="ivisa">Master</label>
+        <input type="radio" name="Elo" id="ielo"><label for="ielo">Elo</label>
+        </span>
+        <span class="colLabCrd">
+        <label for="ivalidade">Validade:</label><input type="number" min="1" max="12" style="width: 30px;"><label> / </label><input type="number" min="2020" max="2050" style="width: 50px;">
+        </span>
+        <span class="colLabCrd">
+        <label for="inumero">Número:</label> <input type="text" required name="Número" id="inumero" class="inpNCC">
+        </span>
+        </fieldset>
+        <span class="colValTot">
+            <label for="TxtTotal"><br/>Valor Total R$
+            <input type="text" name="TxtTotal" 
+            id="TxtTotal" class="InpBoxMed"></label>
+            </span>
+            </div>
+        <textarea name="listaCompras" 
+                id="listaCompras">
+                </textarea>
+            </div>
+        </fieldset>
+    
+        <div class="botoes">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+            </div>
+            </form>       
+        </section>
+</body>
+</html>
